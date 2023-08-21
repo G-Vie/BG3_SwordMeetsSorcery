@@ -1,0 +1,13 @@
+function HasImbuedBladeAttack(entity, mainHand)
+    local entity = entity or context.Source
+    local weaponEntity = GetActiveWeapon(entity, true)
+    if weaponEntity.IsValid then
+        result = Character(entity) & (HasStatus('IMBUED_BLADE_2', weaponEntity) | HasStatus('IMBUED_BLADE_3', weaponEntity))
+        return ConditionResult(result.Result, {ConditionError("HasNotImbuedBlade")}, {ConditionError("HasImbuedBlade")})
+    end
+    return ConditionResult(false, {ConditionError("HasNotImbuedBlade")}, {ConditionError("HasImbuedBlade")})
+end
+
+function ImbuedBladeCheck()
+    return SpellId('Shout_ImbuedBladeBind')
+end
