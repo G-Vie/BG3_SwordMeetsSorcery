@@ -38,7 +38,6 @@ new entry "IMBUED_BLADE_2"
 type "StatusData"
 data "StatusType" "BOOST"
 using "IMBUED_BLADE"
-data "Boosts" "WeaponEnchantment(1);WeaponProperty(Magical);IntrinsicSummonerProficiency();IntrinsicSourceProficiency()"
 
 new entry "IMBUED_BLADE_3"
 type "StatusData"
