@@ -16,7 +16,7 @@ data "DescriptionParams" "1"
 data "Icon" "Skill_Sorcerer_Passive_Martial_Sorcery"
 data "Properties" "Highlighted"
 data "StatsFunctorContext" "OnCast;OnStatusRemoved"
-data "Conditions" "(not context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and IsSpell() and HasUseCosts('ActionPoint', true) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Source)) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('INITIAL_ATTACK_IMBUED_BLADE_TECHNICAL') and TurnBased()) and HasActionResource('BonusActionPoint', 1, 0, false, false, context.Source) and HasImbuedBlade()"
+data "Conditions" "((not context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and IsSpell() and HasUseCosts('ActionPoint', true) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Source)) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('INITIAL_ATTACK_IMBUED_BLADE_TECHNICAL') and TurnBased())) and HasActionResource('BonusActionPoint', 1, 0, false, false, context.Source) and HasImbuedBlade()"
 data "StatsFunctors" "IF(HasAnyExtraAttack(context.Source) and not context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus(SELF,EXTRA_ATTACK_WAR_MAGIC_Q,100,1);IF(not HasAnyExtraAttack(context.Source) and not context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus(SELF,EXTRA_ATTACK_WAR_MAGIC,100,1);IF(HasAnyExtraAttack(context.Target) and context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus(EXTRA_ATTACK_WAR_MAGIC_Q,100,1);IF(not HasAnyExtraAttack(context.Target) and context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus(EXTRA_ATTACK_WAR_MAGIC,100,1)"
 
 new entry "ImbuedBladeGiver1"
