@@ -9,6 +9,7 @@ data "SpellProperties" "IF(HasPassive('ImbuedBladeGiver1', context.Source) and n
 data "Description" "hf92b6552gae09g41d8ga72ag6bdc70e03858;1"
 data "ExtraDescription" "hb9dd971bg157cg4b7agaa85g009663a5f789;1"
 data "TooltipStatusApply" "ApplyStatus(IMBUED_BLADE,100, -1)"
+data "CastSound" "Action_Cast_Fighter_WeaponBond"
 data "CastTextEvent" "Cast"
 data "UseCosts" "SorceryPoint:1"
 data "SpellAnimation" "8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;,,;35b644cf-5c13-4407-9dc1-23bf4309216e,,;823e3ddf-c670-41ef-b7b4-9f4a4e38300b,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,,"
