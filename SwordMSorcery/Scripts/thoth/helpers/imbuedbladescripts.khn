@@ -1,4 +1,4 @@
-function HasImbuedBladeAttack(entity, mainHand)
+function HasImbuedBlade(entity, mainHand)
     local entity = entity or context.Source
     local weaponEntity = GetActiveWeapon(entity, true)
     if weaponEntity.IsValid then
