@@ -9,7 +9,7 @@ data "SpellFlags" "HasVerbalComponent;IsMelee;IsLinkedSpellContainer"
 data "Cooldown" "OncePerRest"
 data "Description" "hf92b6552gae09g41d8ga72ag6bdc70e03858;1"
 data "ExtraDescription" "hb9dd971bg157cg4b7agaa85g009663a5f789;1"
-data "CastSound" "Action_Cast_Fighter_WeaponBond"
+data "Icon" "Action_WeaponBond"
 data "PowerLevel" ""
 
 new entry "Shout_ImbuedBladeBind"
