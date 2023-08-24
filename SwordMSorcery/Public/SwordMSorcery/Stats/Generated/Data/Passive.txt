@@ -15,7 +15,7 @@ data "Description" "heb9d05f4g72c7g4d2bga9c6g9ba6a8cea508;1"
 data "DescriptionParams" "1"
 data "Properties" "Highlighted"
 data "Icon" "Skill_Sorcerer_Passive_Martial_Sorcery"
-data "Boosts" "UnlockSpell(Shout_ImbuedBladeBind_Container)"
+data "Boosts" "UnlockSpell(Shout_ImbuedBladeBind_Container);UnlockSpell(Shout_ImbuedBladeBind)"
 data "StatsFunctorContext" "OnCreate"
 data "StatsFunctors" "ApplyStatus(WARSORCERY_PASSIVE_GIVER,100,-1)"
 
