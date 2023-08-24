@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<content contentuid="h6ca40c86gb30cg4c3bgb696g81b5d135fb02" version="5">Des écailles semblables à celles d'un dragon recouvrent certaines parties de votre peau. Lorsque vous ne portez pas d'armure, votre &lt;LSTag Tooltip="ArmourClass"&gt;Classe d'Armure&lt;/LSTag&gt; est de 13 et vous pouvez ajouter votre modificateur de Constitution au lieu de votre modificateur de Dextérité.</content>
+	<content contentuid="h4dd7e7cfgfd20g49b2gb100gc8847e52fe11" version="1">Sorcellerie Martiale</content>
+	<content contentuid="heb9d05f4g72c7g4d2bga9c6g9ba6a8cea508" version="1">Liez votre magie à une arme pour 1 point de sorcellerie et gagnez la &lt;LSTag Tooltip="WeaponProficiency"&gt;Maîtrise&lt;/LSTag&gt; avec elle et elle gagne un +1 aux jets d'attaque et de dégâts.&lt;br&gt;&lt;br&gt;Au niveau 5, le coût passe à 2 points de sorcellerie et vous pouvez effectuer une attaque avec cette arme comme action bonus après avoir lancé un sort.&lt;br&gt;&lt;br&gt;Au niveau 10, le coût passe à 3 points de sorcellerie et le bonus aux jets d'attaque et de dégâts passe à +2.</content>
+	<content contentuid="h967f7e42g6b50g46c3g9fa4gf29c441a4cf6" version="1">Sorcellerie Martiale : Lien avec une arme</content>
+	<content contentuid="hf92b6552gae09g41d8ga72ag6bdc70e03858" version="1">Vous vous liez à votre arme principale. Ses dégâts deviennent magiques et elle bénéficie d'un bonus aux jets d'attaque et de dégâts. Vous gagnez la &lt;LSTag Tooltip="WeaponProficiency"&gt;Maîtrise&lt;/LSTag&gt; de celle-ci si vous ne l'avez pas déjà.</content>
+	<content contentuid="hb9dd971bg157cg4b7agaa85g009663a5f789" version="1">Vous ne pouvez avoir qu'une seule arme liée à la fois.</content>
+	<content contentuid="h9d7c4ba6g6c9eg46a2g8fbag6bc9455d57d7" version="1">Ensorceleur: Arme liée</content>
+	<content contentuid="hefa99e50g33f9g4862ga704g992dd3b9ec38" version="1">L'ensorceleur lié à cette arme a toujours la &lt;LSTag Tooltip="Proficiency"&gt;Maîtrise&lt;/LSTag&gt; de celle-ci. Les dégâts de l'arme sont magiques et elle a un bonus de [1] aux jets d'attaque et de dégâts.</content>
+	<content contentuid="h78832d92g5ccfg4c57g874bg02d4bd6006b1" version="1">Sorcellerie Martiale: Attaque supplémentaire</content>
+	<content contentuid="ha7646a9bg1848g42c2g9cb4g279e25556b40" version="1">Après avoir lancé un sort, vous pouvez effectuer une attaque avec une arme comme action bonus.</content>
+
+</contentList>
