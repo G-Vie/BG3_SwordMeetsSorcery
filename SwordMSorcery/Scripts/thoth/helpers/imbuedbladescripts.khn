@@ -11,3 +11,32 @@ end
 function ImbuedBladeCheck()
     return SpellId('Shout_ImbuedBladeBind')
 end
+
+function IsLeveledSpell()
+    return IsSpell() & ~IsCantrip()
+end
+
+function IsMainHandWeaponAttack()
+    result = context.HitDescription.AttackType == AttackType.MeleeWeaponAttack
+    return ConditionResult(result)
+end
+
+function AF_Fire()
+    return SpellDamageTypeIs(DamageType.Fire)
+end
+
+function AF_Cold()
+    return SpellDamageTypeIs(DamageType.Cold)
+end
+
+function AF_Acid()
+    return SpellDamageTypeIs(DamageType.Acid)
+end
+
+function AF_Lightning()
+    return SpellDamageTypeIs(DamageType.Lightning)
+end
+
+function AF_Thunder()
+    return SpellDamageTypeIs(DamageType.Thunder)
+end
