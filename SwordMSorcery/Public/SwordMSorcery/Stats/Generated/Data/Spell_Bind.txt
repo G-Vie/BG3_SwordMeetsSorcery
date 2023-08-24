@@ -1,4 +1,3 @@
-
 new entry "Shout_ImbuedBladeBind_Container"
 type "SpellData"
 data "SpellType" "Shout"
@@ -7,6 +6,10 @@ data "SpellContainerID" ""
 data "ContainerSpells" "Shout_ImbuedBladeBind"
 data "DisplayName" "h967f7e42g6b50g46c3g9fa4gf29c441a4cf6;1"
 data "SpellFlags" "HasVerbalComponent;IsMelee;IsLinkedSpellContainer"
+data "Cooldown" "OncePerRest"
+data "Description" "hf92b6552gae09g41d8ga72ag6bdc70e03858;1"
+data "ExtraDescription" "hb9dd971bg157cg4b7agaa85g009663a5f789;1"
+data "CastSound" "Action_Cast_Fighter_WeaponBond"
 data "PowerLevel" ""
 
 new entry "Shout_ImbuedBladeBind"

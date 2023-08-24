@@ -19,7 +19,7 @@ function HasImbuedBlade2(entity, mainHand)
 end
 
 function IsLeveledSpell()
-    return IsSpell() & ~IsCantrip()
+    return (IsSpell() & ~IsCantrip())
 end
 
 function IsMainHandWeaponAttack()
