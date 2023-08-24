@@ -8,8 +8,14 @@ function HasImbuedBlade(entity, mainHand)
     return ConditionResult(false, {ConditionError("HasNotImbuedBlade")}, {ConditionError("HasImbuedBlade")})
 end
 
-function ImbuedBladeCheck()
-    return SpellId('Shout_ImbuedBladeBind')
+function HasImbuedBlade2(entity, mainHand)
+    local entity = entity or context.Source
+    local weaponEntity = GetActiveWeapon(entity, true)
+    if weaponEntity.IsValid then
+        result = Character(entity) & (HasStatus('IMBUED_BLADE_3', weaponEntity))
+        return ConditionResult(result.Result, {ConditionError("HasNotImbuedBlade")}, {ConditionError("HasImbuedBlade")})
+    end
+    return ConditionResult(false, {ConditionError("HasNotImbuedBlade")}, {ConditionError("HasImbuedBlade")})
 end
 
 function IsLeveledSpell()
@@ -39,4 +45,8 @@ end
 
 function AF_Thunder()
     return SpellDamageTypeIs(DamageType.Thunder)
+end
+
+function AF_Neutral()
+    return ~SpellDamageTypeIs(DamageType.Thunder) & ~SpellDamageTypeIs(DamageType.Lightning) & ~SpellDamageTypeIs(DamageType.Acid) & ~SpellDamageTypeIs(DamageType.Cold) & ~SpellDamageTypeIs(DamageType.Fire)
 end
