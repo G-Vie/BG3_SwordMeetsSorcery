@@ -24,7 +24,7 @@ data "StatusType" "BOOST"
 data "DisplayName" "h9857b3b0g7582g48c9g95bdg6c96e2a2afcb;1"
 data "StackId" "WARSORCERY_PASSIVE_GIVER"
 data "StackType" ""Overwrite"
-data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator"
+data "StatusPropertyFlags" "DisableCombatlog;DisableOverhead;DisablePortraitIndicator;FreezeDuration"
 data "Passives" "WarSorcery_5;WarSorcery_10"
 
 new entry "WarSorcery_5"
