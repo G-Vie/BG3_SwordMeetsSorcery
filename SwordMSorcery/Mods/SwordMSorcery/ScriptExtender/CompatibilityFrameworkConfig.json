@@ -1,0 +1,33 @@
+{
+    "FileVersion": 1,
+    "Progressions": [
+      {
+        "UUID": "e07bd66e-16af-47ec-aa19-cc16da0d8c3a",
+        "Strings": [
+          {
+            "Action": "Insert",
+            "Type": "PassivesAdded",
+            "Strings": ["WarSorcery_5"]
+          }
+        ]
+      },
+      {
+        "UUID": "1c091ba4-d911-4c48-99ed-da58463f2ed3",
+        "Strings": [
+          {
+            "Action": "Insert",
+            "Type": "PassivesAdded",
+            "Strings": ["WarSorcery_10"]
+          }
+        ]
+      }
+    ],
+    "Lists": [
+        {
+          "Action": "Insert",
+          "UUIDs": ["c3506532-36eb-4d18-823e-497a537a9619", "49704931-e47b-4ce6-abc6-dfa7ba640752"],
+          "Type": "PassiveList",
+          "Items": ["WarSorcery"]
+        }
+      ]
+}

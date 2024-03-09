@@ -1,0 +1,38 @@
+function GVIE_HasHigherPriorityExtraAttackQueued(status, entity)
+    local entity = entity or context.Target
+    local eaQueuedStatuses = {'EXTRA_ATTACK_2_Q'
+        , 'EXTRA_ATTACK_BLADESINGING_Q'
+        , 'EXTRA_ATTACK_CANTRIP_Q'
+        , 'EXTRA_ATTACK_Q'
+        , 'EXTRA_ATTACK_WAR_MAGIC_Q'
+        , 'EXTRA_ATTACK_WAR_PRIEST_Q'
+        , 'MAG_MARTIAL_EXERTION_Q'
+        , 'WILDSTRIKE_EXTRA_ATTACK_Q'
+        , 'STALKERS_FLURRY_Q'
+        , 'EXTRA_ATTACK_THIRSTING_BLADE_Q'
+        , 'EXTRA_ATTACK_WAR_SORCERY_Q'
+        , 'COMMANDERS_STRIKE_Q_D10'
+        , 'COMMANDERS_STRIKE_Q_D8'
+        , 'WILDSTRIKE_2_EXTRA_ATTACK_Q'
+    }
+    for i,v in ipairs(eaQueuedStatuses) do
+        if (v == status) then
+            return ConditionResult(false)
+        end
+        if HasStatus(v, entity, context.Source, false).Result then
+            return ConditionResult(true)
+        end
+    end
+
+    return ConditionResult(false)
+end
+
+function MainHand_ExtraAttackCheck()
+    return HasStringInSpellRoll('MeleeWeaponAttack') & HasUseCosts('ActionPoint') & ~IsCantrip()
+end
+
+function GVIE_HasAnyExtraAttack(entity)
+    local entity = entity or context.Target
+	local result = HasAnyStatus({'EXTRA_ATTACK','EXTRA_ATTACK_BLADESINGING','EXTRA_ATTACK_CANTRIP_Q','EXTRA_ATTACK_2','EXTRA_ATTACK_WAR_SORCERY','EXTRA_ATTACK_WAR_MAGIC','EXTRA_ATTACK_WAR_PRIEST','MAG_MARTIAL_EXERTION','WILDSTRIKE_EXTRA_ATTACK','WILDSTRIKE_2_EXTRA_ATTACK','STALKERS_FLURRY','EXTRA_ATTACK_THIRSTING_BLADE','COMMANDERS_STRIKE_D10','COMMANDERS_STRIKE_D8'},{},{}, entity, context.Source, false).Result
+    return ConditionResult(result)
+end
